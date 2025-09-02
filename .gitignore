@@ -95,5 +95,15 @@ InitTestScene*.unity*
 /[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers
 /[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers.meta
 
+# Configuraciones de ProjectSettings que no deben ser versionadas
+/[Pp]roject[Ss]ettings/[Vv]ersion[Cc]ontrol[Ss]ettings.asset
+/[Pp]roject[Ss]ettings/[Cc]luster[Ii]nput[Mm]anager.asset
+/[Pp]roject[Ss]ettings/[Gg]raphics[Ss]ettings.asset
+/[Pp]roject[Ss]ettings/[Tt]ag[Mm]anager.asset
+/[Pp]roject[Ss]ettings/[Tt]ime[Mm]anager.asset
+
+# Ignorar la carpeta de configuraciones de VS Code
+.vscode/
+
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*

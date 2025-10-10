@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b3c1a1080f1dc9c479928aee538a6d56
+guid: 46159245272689142b2e81ffe281c50f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6948672925027435140
-    second: charge_0
+      213: -2202960032846005391
+    second: Projectil_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,67 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: charge_0
+      name: Projectil_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 848
-        width: 315
-        height: 400
+        x: 1
+        y: 4
+        width: 139
+        height: 125
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 48282aca535ae6060800000000000000
-      internalID: 6948672925027435140
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cargar_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 448
-        width: 315
-        height: 400
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a094e34203d29204699d7935375e844b
-      internalID: 1691976863
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cargar_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 48
-        width: 315
-        height: 400
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0751a79580be3ca479b02eb4e6fff4cc
-      internalID: 789388653
+      spriteID: 17bb4db95838d61e0800000000000000
+      internalID: -2202960032846005391
       vertices: []
       indices: 
       edges: []
@@ -169,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d95e4ace5bfba4a4f96d07d8f2ca198e
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -177,13 +133,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":3.0},"gridSpriteSize":{"x":315.0,"y":400.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":1,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      Cargar_0: 1691976863
-      Cargar_1: 789388653
-      charge_0: 6948672925027435140
+      Projectil_0: -2202960032846005391
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

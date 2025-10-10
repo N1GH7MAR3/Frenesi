@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: fb8c03d7ff8d8cf4385c0a56464b71ea
+guid: 3752d6bf8632bd947b84db91581b2ad6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5613110196634517225
-    second: Kawsarin_0
+      213: -6047089376949307014
+    second: Gemini_Generated_Image_henfnahenfnahenf-removebg-preview_0
+  - first:
+      213: -5561841298870796198
+    second: Gemini_Generated_Image_henfnahenfnahenf-removebg-preview_1
+  - first:
+      213: -2616583986539922939
+    second: Gemini_Generated_Image_henfnahenfnahenf-removebg-preview_2
+  - first:
+      213: 6079393871535454614
+    second: Gemini_Generated_Image_henfnahenfnahenf-removebg-preview_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +109,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kawsarin_0
+      name: Run_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 3
-        width: 494
-        height: 618
+        x: 0
+        y: 0
+        width: 511
+        height: 619
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9eef58bfbf5c5ed40800000000000000
-      internalID: 5613110196634517225
+      spriteID: dcf48f3b25ad9f74e87c24f84c49998b
+      internalID: 1244230020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run_1
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 0
+        width: 535
+        height: 621
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed1918f3b30f4b4cb1f45440dc278c5
+      internalID: -2132409736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run_2
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 0
+        width: 544
+        height: 621
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9766eaaf85822f34683727f1e40b73c9
+      internalID: 2109326197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run_3
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 0
+        width: 517
+        height: 621
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad7fcb0285b761346b321ca1d9de59fb
+      internalID: 1466116527
       vertices: []
       indices: 
       edges: []
@@ -125,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ee9fb44dd80371e4785a010f1b0d883f
+    spriteID: bace27af11d88994b9edeac1cd159dcc
     internalID: 0
     vertices: []
     indices: 
@@ -133,9 +208,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceOnImport
+        value: False
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Kawsarin_0: 5613110196634517225
+      Run_0: 1244230020
+      Run_1: -2132409736
+      Run_2: 2109326197
+      Run_3: 1466116527
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

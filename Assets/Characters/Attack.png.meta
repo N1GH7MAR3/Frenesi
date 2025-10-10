@@ -1,10 +1,25 @@
 fileFormatVersion: 2
-guid: fb8c03d7ff8d8cf4385c0a56464b71ea
+guid: aa670e673bffcb44aacc6b3c618a42ee
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5613110196634517225
-    second: Kawsarin_0
+      213: 7021089756334450668
+    second: Gemini_Generated_Image_b33monb33monb33m-removebg-preview_0
+  - first:
+      213: 7388238606292160774
+    second: Gemini_Generated_Image_b33monb33monb33m-removebg-preview_1
+  - first:
+      213: 5711348610861323509
+    second: Gemini_Generated_Image_b33monb33monb33m-removebg-preview_2
+  - first:
+      213: -1333681928760005631
+    second: Gemini_Generated_Image_b33monb33monb33m-removebg-preview_3
+  - first:
+      213: 1623475031498762862
+    second: Gemini_Generated_Image_b33monb33monb33m-removebg-preview_4
+  - first:
+      213: -8300441628355984118
+    second: Gemini_Generated_Image_b33monb33monb33m-removebg-preview_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +115,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kawsarin_0
+      name: Attack_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 3
-        width: 494
-        height: 618
+        x: 0
+        y: 1334
+        width: 535
+        height: 666
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9eef58bfbf5c5ed40800000000000000
-      internalID: 5613110196634517225
+      spriteID: e92e6e8447ca0144580368b7b153763e
+      internalID: 2121646232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 668
+        width: 619
+        height: 667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e33b37a770850443a86f400dbd3be82
+      internalID: -1227738899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 817
+        height: 666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e629e5e1c3840ac40aeb5069c93cf875
+      internalID: -340856954
       vertices: []
       indices: 
       edges: []
@@ -125,7 +184,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ee9fb44dd80371e4785a010f1b0d883f
+    spriteID: cdded7389bc9a9148b9b66f70cff31b3
     internalID: 0
     vertices: []
     indices: 
@@ -133,9 +192,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":3.0},"gridSpriteSize":{"x":817.0,"y":666.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Kawsarin_0: 5613110196634517225
+      Attack_0: 2121646232
+      Attack_1: -1227738899
+      Attack_2: -340856954
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

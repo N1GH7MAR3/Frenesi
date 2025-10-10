@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: fb8c03d7ff8d8cf4385c0a56464b71ea
+guid: 4948ee37324498d4ca116870013f02c0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5613110196634517225
-    second: Kawsarin_0
+      213: -893512174199272479
+    second: CAUSA-1_0
+  - first:
+      213: 2317539505132678374
+    second: CAUSA-1_1
+  - first:
+      213: 385014589453996555
+    second: CAUSA-1_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +106,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kawsarin_0
+      name: CAUSA-1_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 3
-        width: 494
-        height: 618
+        x: 122
+        y: 505
+        width: 539
+        height: 636
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9eef58bfbf5c5ed40800000000000000
-      internalID: 5613110196634517225
+      spriteID: 1eb8d5e596b9993f0800000000000000
+      internalID: -893512174199272479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAUSA-1_1
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 498
+        width: 570
+        height: 637
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ec2e5ca6ed892020800000000000000
+      internalID: 2317539505132678374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAUSA-1_2
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 492
+        width: 500
+        height: 637
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b029fbdaab8d75500800000000000000
+      internalID: 385014589453996555
       vertices: []
       indices: 
       edges: []
@@ -125,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ee9fb44dd80371e4785a010f1b0d883f
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Kawsarin_0: 5613110196634517225
+      CAUSA-1_0: -893512174199272479
+      CAUSA-1_1: 2317539505132678374
+      CAUSA-1_2: 385014589453996555
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

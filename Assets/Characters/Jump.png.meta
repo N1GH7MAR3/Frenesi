@@ -1,10 +1,25 @@
 fileFormatVersion: 2
-guid: b88ff0276552cb94fad1a8774ecc869c
+guid: 1b7d92a4db0886240933711d19e46572
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9017502072801961231
-    second: Gemini_Generated_Image_xfi0ilxfi0ilxfi0_0
+      213: 7763672809146872572
+    second: Salto-removebg-preview_0
+  - first:
+      213: -7060871961577807509
+    second: Salto-removebg-preview_1
+  - first:
+      213: 9159109748664807598
+    second: Salto-removebg-preview_2
+  - first:
+      213: -2237255373777544502
+    second: Salto-removebg-preview_3
+  - first:
+      213: 605321294501272650
+    second: Salto-removebg-preview_4
+  - first:
+      213: 1252077724629642289
+    second: Salto-removebg-preview_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +90,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,35 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Gemini_Generated_Image_xfi0ilxfi0ilxfi0_0
+      name: Jump_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 832
-        width: 416
-        height: 416
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1fa5a4d34a56bd280800000000000000
-      internalID: -9017502072801961231
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Salto_0
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 832
-        width: 416
-        height: 416
+        y: 1334
+        width: 704
+        height: 666
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39d69af77dc9d4643a3a9ceee16c24eb
-      internalID: 1871550649
+      spriteID: 5f9f774fa387dcb418d509130d8932b1
+      internalID: 553911078
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Salto_1
+      name: Jump_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 416
-        width: 416
-        height: 416
+        x: 704
+        y: 1334
+        width: 704
+        height: 666
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,42 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 195d44b1d5658a04d83b2a2771cd2a8f
-      internalID: -1610595778
+      spriteID: fb92c4321c4a6c04984f825a77140a2b
+      internalID: 1635850000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Salto_2
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 416
-        width: 416
-        height: 416
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d033601bc928e714cb787b8e604605fd
-      internalID: -54734289
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Salto_3
+      name: Jump_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 416
-        height: 416
+        y: 668
+        width: 704
+        height: 666
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62bf6d46be508b243a9389dddfd475cc
-      internalID: 258520071
+      spriteID: 7e12e80569bd3154d9b1ec9423883b44
+      internalID: 1209803766
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Salto_4
+      name: Jump_3
       rect:
         serializedVersion: 2
-        x: 416
-        y: 0
-        width: 416
-        height: 416
+        x: 704
+        y: 668
+        width: 704
+        height: 666
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,8 +196,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5a19bdde2f54a24d98e949385b7b4bf
-      internalID: -158262903
+      spriteID: d75d9cd21811bb5448d60979a5d4284d
+      internalID: 1399434646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 704
+        height: 666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa3c4d17aef0f7142884b2e9ad6b7341
+      internalID: -1004702728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_5
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 2
+        width: 704
+        height: 666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb4d31868f0fd44fbc050227bc21570
+      internalID: -763257681
       vertices: []
       indices: 
       edges: []
@@ -235,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3486fb7b873da9342b8b79a32b445dd4
+    spriteID: e985c0840b060a44cb960238eb500d0d
     internalID: 0
     vertices: []
     indices: 
@@ -244,17 +259,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries:
-      - key: SpriteEditor.SliceOnImport
-        value: False
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":3.0},"gridSpriteSize":{"x":416.0,"y":416.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":1,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":3.0},"gridSpriteSize":{"x":704.0,"y":666.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Gemini_Generated_Image_xfi0ilxfi0ilxfi0_0: -9017502072801961231
-      Salto_0: 1871550649
-      Salto_1: -1610595778
-      Salto_2: -54734289
-      Salto_3: 258520071
-      Salto_4: -158262903
+      Jump_0: 553911078
+      Jump_1: 1635850000
+      Jump_2: 1209803766
+      Jump_3: 1399434646
+      Jump_4: -1004702728
+      Jump_5: -763257681
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class Kawsarin : MonoBehaviour
 {
@@ -10,33 +12,48 @@ public class Kawsarin : MonoBehaviour
     public float fuerzaLanzamiento = 20f;
     public Transform puntoDeDisparo;
     public GameObject proyectilPrefab;
+    public float limiteAltura = -23f;
+    public Vector3 posicionRespawn;
+    public float limiteDerechaInicialX=37f;
+    public float limiteIzquierdaInicialX=0f;
+    public float distanciaScroll=69f;
 
     private Rigidbody2D rb;
     private CapsuleCollider2D cc;
     private Animator animator;
 
+    public GameObject pantallaGameOver;
+    public GameObject camaraSeguimiento;
+    public GameObject camaraMuerte;
+
     public LayerMask suelo;
 
     private bool miraDerecha = true;
     
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         cc = GetComponent<CapsuleCollider2D>();
         animator = GetComponent<Animator>();
         proyectilPrefab.SetActive(false);
+        pantallaGameOver.SetActive(false);
+        posicionRespawn = new Vector3(-30f,-8f,0);
+        transform.position = posicionRespawn;
+        ResetearPersonaje();
 
     }
 
-    // Update is called once per frame
+ 
     void Update()
     {
         MovimientoPersonaje();
         Salto();
         Ataque();
+        VerificarCaida();
+        VerificarScrollHorizontal();
     }
 
+    
     void MovimientoPersonaje()
     {
         float inputMovimiento = 0f;
@@ -73,6 +90,15 @@ public class Kawsarin : MonoBehaviour
 
          }
         else {animator.SetBool("isJumping", false); }
+
+        if (!EstaEnSuelo() && rb.linearVelocity.y < 0)
+        {
+           rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (3f - 1) * Time.deltaTime;
+        }
+        else if( rb.linearVelocity.y >0 && !Keyboard.current.spaceKey.isPressed)
+        {
+            rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (3f - 1) * Time.deltaTime;
+        }
     }
     void Ataque() {
         if(Mouse.current.leftButton.wasPressedThisFrame) {
@@ -112,10 +138,77 @@ public class Kawsarin : MonoBehaviour
         }
         
     }
+
+    void VerificarCaida()
+    {
+        if (transform.position.y < limiteAltura)
+        {
+            ActivarGameOver();
+               
+        }
+    }
+
+     
+    void VerificarScrollHorizontal()
+    {
+        if (transform.position.x > limiteDerechaInicialX)
+        {
+            Console.WriteLine("Scroll Derecha");
+            posicionRespawn = new Vector3(posicionRespawn.x+distanciaScroll, -8f, transform.position.z);
+            limiteIzquierdaInicialX += distanciaScroll;
+            limiteDerechaInicialX += distanciaScroll;
+
+        }
+        
+    }
+    void ActivarGameOver() {
+        if (pantallaGameOver != null)
+        {
+            pantallaGameOver.SetActive(true);
+            Time.timeScale = 0f;
+        }
+         if (rb != null)
+        {
+            rb.constraints = RigidbodyConstraints2D.FreezeAll;
+        }
+        if (camaraMuerte != null)
+        {
+            camaraSeguimiento.SetActive(false);
+            camaraMuerte.SetActive(true);
+
+        }
+    }
+    public void ResetearPersonaje()
+    {
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero;
+            rb.angularVelocity = 0f;
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+            rb.WakeUp();
+        }
+        camaraSeguimiento.SetActive(true);
+        camaraMuerte.SetActive(false);
+        transform.position = posicionRespawn;
+    }
+
+
     IEnumerator CoolDown() {
         animator.SetBool("isAttacking", true);
         yield return new WaitForSeconds(0.2f);
         animator.SetBool("isAttacking", false);
     }
+    public void TakeDamage (int damage)
+    {
+        vida -= damage;
+        if (vida <= 0)
+        {
+            ActivarGameOver();
 
+        }
+    }
+
+   
 }
+
+

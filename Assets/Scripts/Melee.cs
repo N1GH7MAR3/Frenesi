@@ -2,13 +2,14 @@ using UnityEngine;
 
 public class Melee : Enemy
 {
-    public float attackRange =1.5f;
-    
+    public float attackRange =4f;
+ 
 
 
     public override void Attack()
     {
         animator.SetBool("IsAttacking", true);
+        animator.SetBool("IsFollow", false);
     }
 
    
@@ -17,6 +18,7 @@ public class Melee : Enemy
 
     public override void FollowToPlayer()
     {
+        attackCooldown = 2f;
         Vector2 direction = (player.position - transform.position).normalized;
         float targetSpeedX = direction.x * speed;
         rb.linearVelocity = new Vector2(targetSpeedX, rb.linearVelocity.y);
@@ -24,7 +26,12 @@ public class Melee : Enemy
 
         if (Vector2.Distance(transform.position, player.position) <= attackRange)
         {
-            Attack();
+            if (Time.time >= nextAttackTime)
+            {
+                nextAttackTime = Time.time + attackCooldown;
+                Attack();
+            }
+            
             
         }
         else
@@ -35,9 +42,11 @@ public class Melee : Enemy
 
     public override void DetectPlayer()
     {
+        
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
         if (distanceToPlayer < radioDeteccion)
         {
+
             followPlayer = true;
             animator.SetBool("IsFollow", true);
         }
@@ -65,4 +74,6 @@ public class Melee : Enemy
             animator.SetBool("IsFollow", false);
         }
     }
+
+
 }

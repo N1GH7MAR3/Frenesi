@@ -12,8 +12,10 @@ public abstract class Enemy: MonoBehaviour
     public float radioDeteccion;
     public float speedReturn =1.5f;
     public Vector2 initialPosition;
-    private bool isFacingRight = true;
-    private bool isPlayerRight;
+    public bool isFacingRight = true;
+    public bool isPlayerRight;
+    public float attackCooldown ;
+    public float nextAttackTime ;
 
     public Animator animator;
     void Start()
@@ -48,7 +50,6 @@ public abstract class Enemy: MonoBehaviour
     public abstract void Attack();
     public abstract void FollowToPlayer();
     public abstract void DetectPlayer();
-
     public abstract void ReturnToInitialPosition();
 
     public void TakeDamage(int damage)
@@ -66,14 +67,6 @@ public abstract class Enemy: MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        Kawsarin player = collision.gameObject.GetComponent<Kawsarin>();
-        if (player != null)
-        {
-            player.TakeDamage(1);
-        }
-    }
 
     private void GestionarOrientacion(bool isPlayerRight)
     {
@@ -85,5 +78,15 @@ public abstract class Enemy: MonoBehaviour
             transform.localScale = escala;
         }
         
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Kawsarin playerScript = collision.gameObject.GetComponent<Kawsarin>();
+            playerScript.TakeDamage(1);
+        }
     }
 }

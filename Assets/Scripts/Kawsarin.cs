@@ -3,10 +3,16 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Kawsarin : MonoBehaviour
 {
-    public int vida = 3;
+    public int maxVida = 3;
+    public int vida;
+    public Image[] corazones;
+    public Sprite corazonLleno;
+    public Sprite corazonVacio;
+
     public float fuerzaSalto = 15f;
     public float velocidad = 8f;
     public float fuerzaLanzamiento = 20f;
@@ -29,9 +35,14 @@ public class Kawsarin : MonoBehaviour
     public LayerMask suelo;
 
     private bool miraDerecha = true;
-    
+
+    public float invulnerabilityDuration = 1f;
+    private bool isInvulnerable = false;
+
     void Start()
     {
+        vida = maxVida;
+        UpdateHealthUI();
         rb = GetComponent<Rigidbody2D>();
         cc = GetComponent<CapsuleCollider2D>();
         animator = GetComponent<Animator>();
@@ -200,15 +211,48 @@ public class Kawsarin : MonoBehaviour
     }
     public void TakeDamage (int damage)
     {
+        if (isInvulnerable) return;
         vida -= damage;
-        if (vida <= 0)
+        vida = Math.Max(vida, 0);
+        UpdateHealthUI();
+
+        if (vida > 0)
+        {
+            StartCoroutine(InvulnerabilityCoroutine());
+        }
+        else
         {
             ActivarGameOver();
-
         }
     }
 
-   
+   private IEnumerator InvulnerabilityCoroutine()
+    {
+        isInvulnerable = true;
+        yield return new WaitForSeconds(invulnerabilityDuration);
+        isInvulnerable = false;
+    }
+
+    public void GainHealth (int amount)
+    {
+        vida += amount;
+        vida = Math.Min(vida, maxVida);
+        UpdateHealthUI();
+    }
+    void UpdateHealthUI()
+    {
+        for (int i = 0; i < corazones.Length; i++)
+        {
+            if (i < vida)
+            {
+                corazones[i].sprite = corazonLleno;
+            }
+            else
+            {
+                corazones[i].sprite = corazonVacio;
+            }
+        }
+    }
 }
 
 
